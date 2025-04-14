@@ -1,0 +1,53 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you're using any npm tools later)
+node_modules/
+
+# Site build output (for static site generators, optional)
+_site/
+dist/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Obsidian vault configuration
+.obsidian/
+
+# VSCode settings (if you're using VSCode)
+.vscode/
+
+# Jekyll defaults (GitHub Pages uses Jekyll)
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby and gem files (if customizing Jekyll locally)
+*.gem
+Gemfile.lock
+
+# Environment or sensitive config files
+.env
+.env.*
+
+# Mac Finder folder attributes
+.AppleDouble
+.LSOverride
+
+# Linux trash folder
+.Trash-*
+
+# Backup files
+*.old
+*~
+
+# Compiled files (if any)
+*.class
+*.o
+*.pyc

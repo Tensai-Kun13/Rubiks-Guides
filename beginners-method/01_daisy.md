@@ -1,44 +1,75 @@
-# Step 1: Create the Daisy 🌼
+# 🌼 Step 1: Make the Daisy
 
-"Imagine you're planting a flower garden, and your goal is to grow a beautiful daisy on top of your Rubik’s Cube. The yellow center is the heart of the flower, and you need to place four white petals (edges) around it."
-Finding the White Petals
+Once upon a time, your Rubik’s Cube wanted to become a flower garden. But not just any flower — it dreamed of becoming a daisy, with a bright yellow middle and four little white petals all around! 🌞🌼
 
-🔍 First, let’s find the white edges. They might be anywhere—hiding in the middle, stuck at the bottom, or already in the right place!
+Let’s help it grow, one petal at a time.
 
-📌 Case 1: White edge is in the middle layer (Good!)
+---
 
-    If the white edge is on the right, turn the right side up (R) to place it near the yellow center.
-    If the white edge is on the left, turn the left side up (L') to do the same.
+## 🌟 The Daisy's Dream
 
-📌 Case 2: White edge is in the top layer (Uh-oh!)
+Look at the top of your cube — the yellow center is the daisy’s heart. Now we need to find four white **edge pieces** (the ones between two centers, not corners!) and bring them up to sit around the yellow center, like petals.
 
-    If the white part is sticking out forward, give the front face a little turn CW (F) or CCW (F') to send it down to the middle.
-    Now it's in Case 1, so just move it up (R or L').
+These special pieces are called **white petals**, and our goal is to gently guide each one up to the top face to form the daisy.
 
-📌 Case 3: White edge is in the bottom layer (Also bad!)
+---
 
-    If the white part is sticking forward, do the same as before: turn the front CW (F) or CCW (F') to bring it up.
-    Now it's in Case 1, so move it into place.
+## 🌼 How to Help the White Petals
 
-📌 Case 4: White edge is stuck on the bottom face (The worst!)
+The white edge pieces might be hiding all over the cube. Some may already be on the top, others might be on the sides or even the bottom! Your job is to gently move them up next to the yellow center.
 
-    This means the white part is facing straight down.
-    Give the front face a double turn (F2) to send it all the way to the top.
+If a white edge is already on the top but not in the right spot, don’t worry—you can spin the top face until it's out of the way. Then, bring in a new white edge to take its place. If a white edge is hiding at the bottom, turn that face so it's under an empty spot on the top, then turn that face 180° to send it up to the top like a rocket ship! 🚀
 
-Special Cases: Daisy Troubles
+Be careful not to flip any corners or twist the cube too much. Keep it steady and make those petals bloom!
 
-🌼 Sometimes, the daisy is already partially done, and adding a new petal might mess things up!
+___
 
-⚠️ Special Case 1: You’re about to kick out an already placed petal
+## 🔍 Where Are the Petals Hiding?
 
-    Before moving a new white edge up, rotate the top layer (U') to make space.
-    Now, move the white edge into place like Case 1.
+White petals love to play hide-and-seek! Let’s find them and help them reach the top. Here’s how they like to hide — from easiest to trickiest:
 
-⚠️ Special Case 2: A bad edge would lead to Special Case 1
+### 🌟 Best Place: On Top Already  
+If a white petal is already on the top face next to the yellow center — yay! It's already part of the daisy. No moving needed.
 
-    If a white edge is stuck in a bad position (top or bottom), first give the front face a single turn (F or F') to set up Special Case 1.
-    Then, follow the steps from Special Case 1 to fix it!
+### 👍 Second Best: In the Middle of a Side  
+If the white petal is in the **middle row of any side**, just turn that face **upward** to pop it onto the daisy!
 
-🌟 Your Daisy is Ready!
+It’s like giving the petal a little elevator ride to its sunny spot. ☀️🌼
 
-"Once you’ve placed all four white petals around the yellow center, you’ve grown a perfect daisy. Nice work!" 🎉
+### 😅 Third Best: On the Bottom  
+If the white petal is on the **very bottom** of the cube, it needs a super bounce:
+1. Turn the bottom layer until the petal is under an empty daisy spot.
+2. Then turn that face **twice** (180°) to flip it straight up.
+
+Boing! Just like a trampoline launch! 🦘⬆️⬆️
+
+### 🙈 Tricky Ones: On the Face but in the Top or Bottom Row  
+These petals are a little confused — they’re on the **face** of the cube, but not in the middle row. Their white side is facing you, and they’re in either the **top** or **bottom** row of that face.
+
+Here’s a little gardening trick:
+- Don’t try to send these directly to the daisy.
+- Instead, turn that face **clockwise** or **counterclockwise** until the white part moves into the **middle row**.
+
+Now it’s in the second-best spot, and you can turn it up like usual! 🌼💫
+
+---
+
+## 🌼 Little Gardener Tips
+
+- Work only with **edge pieces** that have white on them (not corners).
+- It’s okay to ignore the other colors for now — we’re just building the daisy!
+- If a petal is being tricky, try turning the cube or face to get a better view.
+
+---
+
+## ✅ Did You Make the Daisy?
+
+Look at the yellow center on top. Do you see four white petals around it? If yes — hooray! You helped your cube bloom its first flower. 🌼💛
+
+---
+
+### 🌼 _“Hooray! Your daisy is blooming and ready to become a beautiful white cross!”_
+
+**🔜 Next up: Turning the Daisy Into a White Cross!**
+[**Next: Step 2 - Solve the White Cross**](02_cross.md) ➡️
+**🔝 Return to [Guide Overview](index.md)**
