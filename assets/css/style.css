@@ -1,140 +1,157 @@
-/* Base dark mode setup */
-:root {
-  --bg-color: #1e1e1e;
-  --text-color: #f4f4f4;
-  --link-color: #4db8ff;
-  --link-visited: #84c1ff;
-  --header-color: #2a2a2a;
-  --section-padding: 2rem;
-  --font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
-}
-
-html.dark {
-  --bg-color: #1e1e1e;
-  --text-color: #f4f4f4;
-  --link-color: #4db8ff;
-  --link-visited: #84c1ff;
-  --header-color: #2a2a2a;
-}
-
-html:not(.dark) {
-  --bg-color: #ffffff;
-  --text-color: #111111;
-  --link-color: #1a73e8;
-  --link-visited: #5f9ea0;
-  --header-color: #f0f0f0;
-}
-
-/* Link colors for dark theme */
-a {
-  color: #FFD700; /* Bright gold for normal links */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #FFA500; /* Softer orange for hover */
-}
-
-a:visited {
-  color: #FFB347; /* Light orange for visited links */
-}
-
-/* General Styling */
+/* Base Layout and Dark Theme */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: var(--font-family);
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  background-color: #121212;
+  color: #f4f4f4;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Page Transitions */
-/*
-.page-transition {
-  opacity: 1;
-  transition: opacity 0.4s ease-in-out;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.page-transition.fade-out {
-  opacity: 0;
-}
-*/
-
-/* Header Navigation */
+/* Header Styles */
 header {
-  background-color: var(--header-color);
-  padding: 1rem var(--section-padding);
-  border-bottom: 2px solid #444;
+  background-color: #1f1f1f;
+  padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #333;
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
 }
 
+/* Navigation Styles */
 nav ul {
-  display: flex;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   padding: 0;
   margin: 0;
 }
 
-nav li {
-  margin: 0 1rem;
-}
-
 nav a {
-  color: var(--link-color);
+  color: #FFD700;
   text-decoration: none;
   font-weight: bold;
-}
-
-nav a:visited {
-  color: var(--link-visited);
+  padding: 0.5rem 1rem;
+  display: inline-block;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+nav a:visited {
+  color: #ffa500; /* brighter orange-yellow for dark background */
 }
 
 /* Theme Toggle Button */
-#theme-toggle {
-  font-size: 1.5rem;
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
+  padding-right: 1rem;
+}
+
+.theme-toggle button {
   background: none;
   border: none;
+  font-size: 1.5rem;
   cursor: pointer;
-  color: var(--text-color);
+  color: #FFD700;
+  transition: color 0.3s ease;
 }
 
-/* Main Content */
-main {
-  padding: var(--section-padding);
-  max-width: 800px;
-  margin: 0 auto;
+.theme-toggle button:hover {
+  color: #ffa500;
 }
 
-h1, h2, h3 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: var(--link-color);
+/* Light Theme */
+body.light-mode {
+  background-color: #ffffff;
+  color: #222;
 }
 
-p {
-  margin-bottom: 1rem;
+body.light-mode nav a {
+  color: #3366cc;
+}
+
+body.light-mode nav a:visited {
+  color: #663399;
+}
+
+body.light-mode nav a:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+body.light-mode .theme-toggle button {
+  color: #333;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
+  margin-top: 4rem;
   font-size: 0.9rem;
-  color: var(--text-color);
-  background-color: var(--header-color);
-  border-top: 2px solid #444;
+  color: #aaa;
+}
+
+/* Section and Text Spacing */
+main {
+  margin-bottom: 3rem;
+}
+
+main h2, main h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #555;
+  padding-bottom: 0.3rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .theme-toggle {
+    justify-content: center;
+    margin-top: 1rem;
+  }
 }
