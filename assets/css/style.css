@@ -1,6 +1,6 @@
 /* Base Layout and Dark Theme */
 body {
-  font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
   font-size: 18px;
   line-height: 1.7;
   background-color: #121212;
@@ -28,6 +28,7 @@ h1 {
   font-size: 2rem;
   margin: 0 0 0.5rem 0;
   text-align: center;
+  color: #fff !important;
 }
 
 /* Navigation Styles */
@@ -55,7 +56,7 @@ nav a:hover {
 }
 
 nav a:visited {
-  color: #ffa500; /* brighter orange-yellow for dark background */
+  color: #ffa500; /* bright orange for visibility */
 }
 
 /* Theme Toggle Button */
@@ -91,7 +92,7 @@ body.light-mode nav a {
 }
 
 body.light-mode nav a:visited {
-  color: #663399;
+  color: #9933cc; /* More readable purple */
 }
 
 body.light-mode nav a:hover {
@@ -101,6 +102,10 @@ body.light-mode nav a:hover {
 
 body.light-mode .theme-toggle button {
   color: #333;
+}
+
+body.light-mode h1 {
+  color: #fff !important;
 }
 
 /* Footer */
@@ -137,6 +142,7 @@ ul {
   body {
     font-size: 16px;
     padding: 0.5rem;
+    font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
   }
 
   nav ul {
