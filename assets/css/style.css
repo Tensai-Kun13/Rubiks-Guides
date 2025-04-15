@@ -25,6 +25,21 @@ html:not(.dark) {
   --header-color: #f0f0f0;
 }
 
+/* Link colors for dark theme */
+a {
+  color: #FFD700; /* Bright gold for normal links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FFA500; /* Softer orange for hover */
+}
+
+a:visited {
+  color: #FFB347; /* Light orange for visited links */
+}
+
 /* General Styling */
 body {
   background-color: var(--bg-color);
@@ -38,6 +53,7 @@ body {
 }
 
 /* Page Transitions */
+/*
 .page-transition {
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
@@ -46,6 +62,7 @@ body {
 .page-transition.fade-out {
   opacity: 0;
 }
+*/
 
 /* Header Navigation */
 header {
