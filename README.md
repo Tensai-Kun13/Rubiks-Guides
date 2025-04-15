@@ -6,6 +6,17 @@ This site is your go-to guide for learning how to solve the Rubik’s Cube — w
 
 Our tutorials are written in **ELI5 (Explain Like I'm 5)** language, using **fun stories** and **colorful explanations** to make learning feel like playtime. It’s like storytime… but with a cube! 📚🧩
 
+🌐 **Visit the Guides Here**:  
+👉 [https://tensai-kun13.github.io/Rubiks-Guides/](https://tensai-kun13.github.io/Rubiks-Guides/)
+
+---
+
+## 🤹 Who’s This For?
+
+Whether you're a curious kid, a determined beginner, or just someone who always wanted to learn the cube — this guide is written for you! It uses **ELI5 language**, **clear visuals**, and even **emojis** to keep things fun and simple.
+
+No matter your age, background, or cube skills — **you can solve the cube**, and we’re here to help you do it!
+
 ---
 
 ## 🧭 What’s Inside This Guide?
@@ -35,17 +46,6 @@ Once you’ve mastered the beginner’s way, you might be ready for **CFOP** —
 We’ll be adding a full CFOP guide soon, complete with friendly explanations, muscle memory tricks, and cool algorithms to speed up your solves.
 
 ➡️ [Placeholder for CFOP](./cfop-method/) _(Coming soon!)_
-
----
-
-## 🧠 Who Is This Guide For?
-
-- 🐣 Absolute beginners who’ve never solved a cube before
-- 🧒 Kids who want to learn with stories and simple steps
-- 👨‍🏫 Teachers or parents helping someone learn
-- 🧠 Adults who love to learn in fun, creative ways
-
-No matter your age, background, or cube skills — **you can solve the cube**, and we’re here to help you do it!
 
 ---
 
