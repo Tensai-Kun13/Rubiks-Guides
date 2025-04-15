@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <script defer>
+    // Theme toggle logic
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.getElementById('theme-toggle');
+      const htmlEl = document.documentElement;
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      htmlEl.setAttribute('data-theme', currentTheme);
+      toggleButton.innerText = currentTheme === 'dark' ? '🌞' : '🌙';
+
+      toggleButton.addEventListener('click', () => {
+        const isDark = htmlEl.getAttribute('data-theme') === 'dark';
+        htmlEl.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('theme', isDark ? 'light' : 'dark');
+        toggleButton.innerText = isDark ? '🌙' : '🌞';
+      });
+    });
+  </script>
 </head>
+
 <body>
   <header>
-    <div class="navbar">
-      <h1 class="site-title">{{ site.title }}</h1>
+    <div class="container">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+        <h1>{{ site.title }}</h1>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
       <nav>
-        <ul class="nav-links">
+        <ul>
           <li><a href="{{ site.baseurl }}/">Home</a></li>
           <li><a href="{{ site.baseurl }}/cube-basics/">Cube Basics</a></li>
           <li><a href="{{ site.baseurl }}/beginners-method/">Beginner's Method</a></li>
@@ -21,7 +42,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="container">
     {{ content }}
   </main>
 
