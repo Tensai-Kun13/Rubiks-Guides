@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   <script defer>
-    // Theme toggle logic
     document.addEventListener('DOMContentLoaded', function () {
       const toggleButton = document.getElementById('theme-toggle');
       const htmlEl = document.documentElement;
-      const currentTheme = localStorage.getItem('theme') || 'light';
+      const currentTheme = localStorage.getItem('theme') || 'dark';
       htmlEl.setAttribute('data-theme', currentTheme);
       toggleButton.innerText = currentTheme === 'dark' ? '🌞' : '🌙';
 
@@ -23,13 +22,12 @@
     });
   </script>
 </head>
-
 <body>
   <header>
     <div class="container">
-      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+      <div class="header-bar">
         <h1>{{ site.title }}</h1>
-        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌞</button>
       </div>
       <nav>
         <ul>
@@ -41,11 +39,9 @@
       </nav>
     </div>
   </header>
-
   <main class="container">
     {{ content }}
   </main>
-
   <footer>
     <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
   </footer>
