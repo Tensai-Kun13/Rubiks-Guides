@@ -2,68 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rubik's Cube Guide</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <header>
-    <h1>Rubik's Cube Guide</h1>
-    <button class="nav-toggle" onclick="toggleNavbar()">☰</button>
-    <nav class="navbar">
-      <ul class="navbar-links" id="navbar-links">
-        <li class="dropdown">
-          <a href="#">Basics</a>
-          <div class="dropdown-content">
-            <a href="intro.html">Introduction</a>
-            <a href="cube-parts.html">Cube Parts</a>
-            <a href="notation.html">Move Notation</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#">Beginner's Method</a>
-          <div class="dropdown-content">
-            <a href="daisy.html">Daisy</a>
-            <a href="cross.html">Cross</a>
-            <a href="first-layer.html">First Layer</a>
-            <a href="second-layer.html">Second Layer</a>
-            <a href="yellow-cross.html">Yellow Cross</a>
-            <a href="solve-edges.html">Solve Edges</a>
-            <a href="corners.html">Corners</a>
-            <a href="orient-corners.html">Orient Corners</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#">Next Steps</a>
-          <div class="dropdown-content">
-            <a href="next-cross.html">Solve Cross Efficiently</a>
-            <a href="corner-insertion.html">Back Corner Insertion</a>
-            <a href="yellow-cross-tricks.html">Yellow Cross in One</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="#">CFOP</a>
-          <div class="dropdown-content">
-            <a href="cfop-cross.html">CFOP Cross</a>
-            <a href="f2l.html">F2L</a>
-            <a href="oll.html">OLL</a>
-            <a href="pll.html">PLL</a>
-          </div>
-        </li>
-      </ul>
+    <h1><a href="{{ '/' | relative_url }}">Rubik’s Guides</a></h1>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="navbar-links" id="navbarLinks">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/cube-basics/' | relative_url }}">Cube Basics</a>
+      <a href="{{ '/beginners-method/' | relative_url }}">Beginner’s Method</a>
+      <a href="{{ '/next-steps/' | relative_url }}">Next Steps</a>
+      <a href="{{ '/cfop/' | relative_url }}">CFOP</a>
     </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
   </header>
   <main>
-    <!-- Page-specific content goes here -->
+    {{ content }}
   </main>
   <footer>
-    &copy; 2025 Rubik's Cube Guide
+    <p>Created with ❤️ by Tensai-kun</p>
   </footer>
 
   <script>
-    function toggleNavbar() {
-      document.getElementById("navbar-links").classList.toggle("show");
-    }
+    const navToggle = document.getElementById("navToggle");
+    const navbarLinks = document.getElementById("navbarLinks");
+    const themeToggle = document.getElementById("themeToggle");
+
+    navToggle.addEventListener("click", () => {
+      navbarLinks.classList.toggle("show");
+    });
+
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+      if (document.body.classList.contains("light-mode")) {
+        themeToggle.textContent = "🌞";
+      } else {
+        themeToggle.textContent = "🌙";
+      }
+    });
   </script>
 </body>
 </html>
