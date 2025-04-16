@@ -1,4 +1,4 @@
-/* Base Layout and Dark Theme */
+/* Base Layout */
 body {
   font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
   font-size: 18px;
@@ -10,89 +10,125 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Header Styles */
 header {
   background-color: #1f1f1f;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 2px solid #333;
 }
 
-h1 {
-  font-size: 2rem;
-  margin: 0 0 0.5rem 0;
-  text-align: center;
+.site-title {
   color: #fff !important;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
 }
 
-/* Navigation Styles */
-nav ul {
-  list-style: none;
+/* NAVIGATION */
+nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 nav a {
-  color: #FFD700;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5rem 1rem;
-  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+/* Link Colors */
+nav a:link {
+  color: #FFD700;
+}
+
+nav a:visited {
+  color: #ffa500 !important;
 }
 
 nav a:hover {
   background-color: #333;
-  border-radius: 8px;
 }
 
-nav a:visited {
-  color: #ffa500; /* bright orange for visibility */
+nav a:active {
+  color: #ffcc00;
 }
 
-/* Theme Toggle Button */
-.theme-toggle {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 1rem;
-  padding-right: 1rem;
-}
-
-.theme-toggle button {
+/* Toggle Button */
+#theme-toggle {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   cursor: pointer;
-  color: #FFD700;
-  transition: color 0.3s ease;
+  color: #fff;
+  margin-left: auto;
 }
 
-.theme-toggle button:hover {
-  color: #ffa500;
+/* Main Content Styling */
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* Light Theme */
+main h1, main h2, main h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  color: inherit;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.2rem;
+}
+
+main h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Light Mode */
 body.light-mode {
   background-color: #ffffff;
   color: #222;
 }
 
-body.light-mode nav a {
+body.light-mode .site-title {
+  color: #fff !important;
+}
+
+body.light-mode nav a:link {
   color: #3366cc;
 }
 
 body.light-mode nav a:visited {
-  color: #9933cc; /* More readable purple */
+  color: #9933cc !important;
 }
 
 body.light-mode nav a:hover {
@@ -100,64 +136,33 @@ body.light-mode nav a:hover {
   color: #000;
 }
 
-body.light-mode .theme-toggle button {
-  color: #333;
+body.light-mode nav a:active {
+  color: #3366cc;
 }
 
-body.light-mode h1 {
-  color: #fff !important;
+body.light-mode main h1 {
+  color: #222;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 4rem;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-/* Section and Text Spacing */
-main {
-  margin-bottom: 3rem;
-}
-
-main h2, main h3 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px dashed #555;
-  padding-bottom: 0.3rem;
-}
-
-p {
-  margin: 1rem 0;
-}
-
-ul {
-  padding-left: 1.5rem;
-  margin: 1rem 0;
-}
-
-/* Responsive Styling */
+/* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 0.5rem;
-    font-family: 'Comic Sans MS', 'Comic Neue', sans-serif;
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  nav ul {
+  .nav-links {
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
   }
 
-  nav a {
-    width: 100%;
-    text-align: center;
+  #theme-toggle {
+    margin-left: 0;
+    align-self: flex-end;
+    margin-top: 0.5rem;
   }
 
-  .theme-toggle {
-    justify-content: center;
-    margin-top: 1rem;
+  .site-title {
+    font-size: 1.6rem;
   }
 }
