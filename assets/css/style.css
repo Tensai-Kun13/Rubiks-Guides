@@ -174,12 +174,17 @@ footer {
   }
 
   .nav-links ul {
+    display: none;
     position: static;
-    display: block;
     background-color: transparent;
   }
 
-  .nav-links li:hover > ul {
+  .nav-links li.open > ul {
     display: block;
+  }
+
+  .nav-links li > a::after {
+    content: " ▼";
+    font-size: 0.75em;
   }
 }

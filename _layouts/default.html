@@ -59,5 +59,26 @@
       toggleBtn.textContent = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
     });
   </script>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navItems = document.querySelectorAll('.nav-links > li');
+
+    navItems.forEach((item) => {
+      const submenu = item.querySelector('ul');
+      const link = item.querySelector('a');
+
+      if (submenu && link) {
+        link.addEventListener('click', (e) => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            item.classList.toggle('open');
+          }
+        });
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
