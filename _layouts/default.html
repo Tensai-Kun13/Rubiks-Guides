@@ -2,32 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
 </head>
-<body class="dark-mode">
+<body>
   <header>
     <div class="container">
-      <h1>{{ site.title }}</h1>
-
+      <h1 class="site-title">{{ site.title }}</h1>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="{{ site.baseurl }}/">Home</a></li>
           <li><a href="{{ site.baseurl }}/cube-basics/">Cube Basics</a></li>
           <li><a href="{{ site.baseurl }}/beginners-method/">Beginner's Method</a></li>
           <li><a href="{{ site.baseurl }}/next-steps/">Next Steps</a></li>
           <li><a href="{{ site.baseurl }}/cfop-method/">CFOP Method</a></li>
         </ul>
+        <button id="theme-toggle" title="Toggle theme">🌙</button>
       </nav>
-
-      <div class="theme-toggle">
-        <button id="theme-toggle-btn" title="Toggle theme">🌙</button>
-      </div>
     </div>
   </header>
 
-  <main class="container">
+  <main>
     {{ content }}
   </main>
 
@@ -36,16 +32,20 @@
   </footer>
 
   <script>
-    const toggleBtn = document.getElementById('theme-toggle-btn');
+    const toggle = document.getElementById("theme-toggle");
     const body = document.body;
+    const isLight = localStorage.getItem("theme") === "light";
 
-    toggleBtn.addEventListener('click', () => {
-      body.classList.toggle('light-mode');
-      if (body.classList.contains('light-mode')) {
-        toggleBtn.textContent = '☀️';
-      } else {
-        toggleBtn.textContent = '🌙';
-      }
+    if (isLight) {
+      body.classList.add("light-mode");
+      toggle.textContent = "☀️";
+    }
+
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("light-mode");
+      const isLight = body.classList.contains("light-mode");
+      toggle.textContent = isLight ? "☀️" : "🌙";
+      localStorage.setItem("theme", isLight ? "light" : "dark");
     });
   </script>
 </body>
