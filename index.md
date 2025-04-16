@@ -31,6 +31,7 @@ Think of it like a storybook—each chapter brings you closer to becoming a cube
 Before we dive into solving, let’s meet the cube and learn its favorite moves!
 
 [Jump into Cube Basics →](./cube-basics/index.md)
+<a id="cube-anatomyy"></a>
 ### 🦴 Cube Anatomy
 
 Your cube is made of **26 little puzzle pieces**:
@@ -41,7 +42,7 @@ Your cube is made of **26 little puzzle pieces**:
 These pieces twist and turn around a magical invisible ball inside. 🎱
 
 ---
-
+<a id="cube-notation"></a>
 ### 💃 Cube Notation
 
 Cubes love to dance! We use special letters to tell them how to move. Here's how we talk to our cube:
@@ -56,7 +57,7 @@ Cubes love to dance! We use special letters to tell them how to move. Here's how
 A **2** after a letter means a big spin: a 180° turn! (Like R2)
 
 ---
-
+<a id="face-names"></a>
 ### 🧭 Face Names
 
 Each side of the cube has a name, and they usually match colors:
@@ -71,7 +72,7 @@ Each side of the cube has a name, and they usually match colors:
 Knowing these is like knowing your left and right hands—it helps a lot!
 
 ---
-
+<a id="beginners-method"></a>
 ## 🪄 Beginner’s Method
 
 This is where your solving journey begins! 🛤️
@@ -81,7 +82,7 @@ We’ll go one tiny step at a time, solving one layer after another. You’ll le
 [Jump into the Beginner’s Method →](./beginners-method/index.md)
 
 ---
-
+<a id="cfop-method"></a>
 ## ⚡ CFOP Method
 
 Already know how to solve the cube? Ready to go faster? 🏎️
