@@ -2,36 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
-  <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rubik's Cube Guide</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>{{ site.title }}</h1>
-    <button class="nav-toggle" onclick="toggleNav()">☰</button>
-    <nav class="navbar-links" id="navbar">
-      <a href="{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.baseurl }}/cube-basics/">Cube Basics</a>
-      <a href="{{ site.baseurl }}/beginners-method/">Beginner's Method</a>
-      <a href="{{ site.baseurl }}/next-steps/">Next Steps</a>
-      <a href="{{ site.baseurl }}/cfop-method/">CFOP Method</a>
+    <h1>Rubik's Cube Guide</h1>
+    <button class="nav-toggle" onclick="toggleNavbar()">☰</button>
+    <nav class="navbar">
+      <ul class="navbar-links" id="navbar-links">
+        <li class="dropdown">
+          <a href="#">Basics</a>
+          <div class="dropdown-content">
+            <a href="intro.html">Introduction</a>
+            <a href="cube-parts.html">Cube Parts</a>
+            <a href="notation.html">Move Notation</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Beginner's Method</a>
+          <div class="dropdown-content">
+            <a href="daisy.html">Daisy</a>
+            <a href="cross.html">Cross</a>
+            <a href="first-layer.html">First Layer</a>
+            <a href="second-layer.html">Second Layer</a>
+            <a href="yellow-cross.html">Yellow Cross</a>
+            <a href="solve-edges.html">Solve Edges</a>
+            <a href="corners.html">Corners</a>
+            <a href="orient-corners.html">Orient Corners</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Next Steps</a>
+          <div class="dropdown-content">
+            <a href="next-cross.html">Solve Cross Efficiently</a>
+            <a href="corner-insertion.html">Back Corner Insertion</a>
+            <a href="yellow-cross-tricks.html">Yellow Cross in One</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">CFOP</a>
+          <div class="dropdown-content">
+            <a href="cfop-cross.html">CFOP Cross</a>
+            <a href="f2l.html">F2L</a>
+            <a href="oll.html">OLL</a>
+            <a href="pll.html">PLL</a>
+          </div>
+        </li>
+      </ul>
     </nav>
   </header>
-
   <main>
-    {{ content }}
+    <!-- Page-specific content goes here -->
   </main>
-
   <footer>
-    <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    &copy; 2025 Rubik's Cube Guide
   </footer>
 
   <script>
-    function toggleNav() {
-      const nav = document.getElementById('navbar');
-      nav.classList.toggle('show');
+    function toggleNavbar() {
+      document.getElementById("navbar-links").classList.toggle("show");
     }
   </script>
 </body>
