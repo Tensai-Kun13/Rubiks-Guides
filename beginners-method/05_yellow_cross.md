@@ -24,7 +24,7 @@ We’re going to help those lightning bugs find their way by using a special spe
 The magic goes like this:
 
 ⟳ `F`  
-⬆️ `R` ➡️ `U` ⬇️ `R'` ⬅️ `U'`  
+⬆️ `R` ⬅️ `U` ⬇️ `R'` ➡️ `U'`  
 ⟲ `F'`
 
 (That’s just a fancy way of saying: **Front, Sexy Move, Front Prime**)
