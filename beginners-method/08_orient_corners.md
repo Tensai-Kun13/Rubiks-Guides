@@ -34,7 +34,7 @@ Hold the cube so that this corner is in the **bottom-right corner** (the "Down-R
 
 ## 💃 The Dance That Fixes It All
 
-To help the corner twist the right way, we’ll use a special little dance called the **Sexy Move**.
+To help the corner twist the right way, we’ll use a special little dance called the **Super Move**.
 
 Here’s how it goes:
 ⬆ `R` ⬅ `U` ⬇ `R'` ➡ `U'`
@@ -49,7 +49,7 @@ Do the dance **over and over** (don’t turn the cube!) until the yellow sticker
 
 Now turn just the **bottom layer** (not the whole cube!) to bring another unsolved corner to the **Down-Right** spot.
 
-Repeat the same Sexy Move dance until that corner is solved too.
+Repeat the same Super Move dance until that corner is solved too.
 
 > Keep going around the cube, one sleepy corner at a time, until all the yellow corners are facing down.
 

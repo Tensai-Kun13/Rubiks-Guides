@@ -77,7 +77,7 @@ Knowing these is like knowing your left and right hands—it helps a lot!
 
 This is where your solving journey begins! 🛤️
 
-We’ll go one tiny step at a time, solving one layer after another. You’ll learn silly tricks like the **“Sexy Move”** and meet fun friends like **Sune** and **Niklas**. 🌟
+We’ll go one tiny step at a time, solving one layer after another. You’ll learn silly tricks like the **“Super Move”** and meet fun friends like **Sune** and **Niklas**. 🌟
 
 [Jump into the Beginner’s Method →](./beginners-method/index.md)
 

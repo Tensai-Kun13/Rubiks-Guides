@@ -20,9 +20,9 @@ The trick to help it is called the **Edge Switcheroo**. It’s like a secret tun
 
 First, you help it face the right way by spinning the top so one of its colors matches the center below it. Then, you turn the top layer *away* from where the piece wants to go. This hides the piece—shhh! 🤫 It’s part of the trick.
 
-Now, if the piece wants to go to the **right**, you do the **Right Sexy Move**. If it wants to go to the **left**, you do the **Left Sexy Move**.
+Now, if the piece wants to go to the **right**, you do the **Right Super Move**. If it wants to go to the **left**, you do the **Left Super Move**.
 
-But wait! The trick isn’t over yet. You give the cube a gentle turn so the other color’s home (the matching center) is now in front of you. Then you do the **other** sexy move on that side, and ta-da! ✨ The edge slides right into place.
+But wait! The trick isn’t over yet. You give the cube a gentle turn so the other color’s home (the matching center) is now in front of you. Then you do the **other** super move on that side, and ta-da! ✨ The edge slides right into place.
 
 ---
 

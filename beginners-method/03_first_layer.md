@@ -14,15 +14,15 @@ Now, sometimes the white part is peeking up at you from the top. Other times, it
 
 ---
 
-## 🕺 Meet the “Sexy Move” and Friends
+## 🕺 Meet the “Super Move” and Friends
 
-There's a special dance that helps white corners move to the bottom. It's called the **Sexy Move**, and it goes like this:
+There's a special dance that helps white corners move to the bottom. It's called the **Super Move**, and it goes like this:
 
 **⬆️ R ⬅️ U ⬇️ R' ➡️ U'**
 
 It might sound silly, but it works like magic!
 
-And there’s also a partner move called the **Left Sexy Move**:
+And there’s also a partner move called the **Left Super Move**:
 
 **⬆️ L' ➡️ U' ⬇️ L ⬅️ U**
 
@@ -34,9 +34,9 @@ They both do the same kind of magic, just on different sides of the cube.
 
 Most of the time, the white corner piece will be sitting in the top layer, either on the right side or the left.
 
-Let’s say the white sticker is on the **right side** of the piece (like this: `[A] [A] [W]`). That means you should gently turn the cube so that piece is sitting in the **top-right corner**, then use the **Right Sexy Move**.
+Let’s say the white sticker is on the **right side** of the piece (like this: `[A] [A] [W]`). That means you should gently turn the cube so that piece is sitting in the **top-right corner**, then use the **Right Super Move**.
 
-Now imagine the white sticker is on the **left side** of the piece (like this: `[W] [A] [A]`). You’d turn the cube so that piece is in the **top-left corner**, and use the **Left Sexy Move**.
+Now imagine the white sticker is on the **left side** of the piece (like this: `[W] [A] [A]`). You’d turn the cube so that piece is in the **top-left corner**, and use the **Left Super Move**.
 
 Every time you do one of these moves, the piece gets closer to its happy home. You might have to do the move once, twice, or even three times—but eventually, it’ll slide into the right spot.
 
@@ -44,7 +44,7 @@ Every time you do one of these moves, the piece gets closer to its happy home. Y
 
 ## 💡 When White Is on Top
 
-Sometimes the white sticker is looking straight up at you from the top of the piece. In this case, you can just do **the Right or Left Sexy Move three times**. It might look like a dance, but by the end, the piece will twirl right into place.
+Sometimes the white sticker is looking straight up at you from the top of the piece. In this case, you can just do **the Right or Left Super Move three times**. It might look like a dance, but by the end, the piece will twirl right into place.
 
 ---
 
@@ -52,7 +52,7 @@ Sometimes the white sticker is looking straight up at you from the top of the pi
 
 Uh-oh! One of your white corner pieces might already be in the right spot… but it's twisted the wrong way. That means it’s **“in jail.”**
 
-Here’s a secret: to get it out, you first make sure the white sticker is on the **side**, not on the bottom. Then, you do the sexy move that matches the side the white sticker is on (Right Sexy Move for the right side, Left Sexy Move for the left). That will kick it out of jail and back up to the top layer, where you can solve it normally using the moves you’ve already learned.
+Here’s a secret: to get it out, you first make sure the white sticker is on the **side**, not on the bottom. Then, you do the super move that matches the side the white sticker is on (Right Super Move for the right side, Left Super Move for the left). That will kick it out of jail and back up to the top layer, where you can solve it normally using the moves you’ve already learned.
 
 ---
 

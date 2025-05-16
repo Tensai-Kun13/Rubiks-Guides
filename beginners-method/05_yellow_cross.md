@@ -27,7 +27,7 @@ The magic goes like this:
 ⬆️ `R` ⬅️ `U` ⬇️ `R'` ➡️ `U'`  
 ⟲ `F'`
 
-(That’s just a fancy way of saying: **Front, Sexy Move, Front Prime**)
+(That’s just a fancy way of saying: **Front, Super Move, Front Prime**)
 
 Don’t worry if it looks tricky! Let’s tell it like a story instead.
 
@@ -41,7 +41,7 @@ So we called upon a little spell to help them out.
 
 First, we gently **opened the front door** of the cube. (*F*)
 
-Then, we did the **right side’s favorite dance**, the “sexy move,” to shake things up and get the bugs moving.  
+Then, we did the **right side’s favorite dance**, the “super move,” to shake things up and get the bugs moving.  
 (*R U R' U'*)
 
 After the dance, we carefully **closed the front door again** so everything stayed neat and tidy. (*F'*)
