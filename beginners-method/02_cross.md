@@ -8,7 +8,7 @@ ___
 
 ## 🌈 The Great Petal Spin
 
-Make sure you are hold your cube with the Daisy is on top and look closely at one of the white petals. Peek at the color that’s not white (maybe it’s red, blue, green, or orange). Then, spin the top face (where the Daisy lives) until that color lines up with its matching center color. Like magic, red finds red, blue finds blue... they just want to go home!
+Make sure you are holding your cube with the Daisy is on top and look closely at one of the white petals. Peek at the other attached color that’s not white (maybe it’s red, blue, green, or orange). Then, spin the top face (where the Daisy lives) until that color lines up with its matching center color. Like magic, red finds red, blue finds blue... they just want to go home!
 
 ___
 
